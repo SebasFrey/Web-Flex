@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebFlex - Noticias</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">WebFlex</a>
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="#">Herramientas</a>
+                    <ul class="dropdown-content">
+                        <li><a href="texto.html">Texto</a></li>
+                        <li><a href="imagenes.html">Imágenes</a></li>
+                        <li><a href="videos.html">Videos</a></li>
+                        <li><a href="audio.html">Audio</a></li>
+                        <li><a href="documentos.html">Documentos</a></li>
+                    </ul>
+                </li>
+                <li><a href="actividades.html">Actividades</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="contactos.html">Contactos</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero news-hero">
+            <h1>Noticias</h1>
+            <p>Mantente al día con las últimas novedades en herramientas multimedia</p>
+        </section>
+
+        <section class="news-section reveal fade-bottom">
+            <div class="news-container">
+                <article class="news-card featured-news">
+                    <img src="../Imagenes/1.jpeg" alt="Noticia destacada" class="news-image">
+                    <div class="news-content">
+                        <h2>Nueva herramienta de IA revoluciona la edición de video</h2>
+                        <p class="news-meta">Por Juan Pérez | 10 de junio, 2023</p>
+                        <p>Una nueva herramienta de inteligencia artificial promete simplificar drásticamente el proceso de edición de video, permitiendo a los usuarios crear contenido profesional en minutos...</p>
+                        <a href="#" class="btn">Leer más</a>
+                    </div>
+                </article>
+
+                <div class="news-grid">
+                    <article class="news-card">
+                        <img src="../Imagenes/Gemini_Generated_Image_q6hhbxq6hhbxq6hh.jpeg" alt="Noticia 1" class="news-image">
+                        <div class="news-content">
+                            <h3>Actualización masiva en herramientas de diseño gráfico</h3>
+                            <p class="news-meta">Por Ana García | 5 de junio, 2023</p>
+                            <p>Las principales plataformas de diseño gráfico han lanzado actualizaciones significativas, incluyendo nuevas funcionalidades y mejoras en la interfaz de usuario...</p>
+                            <a href="#" class="btn">Leer más</a>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <img src="placeholder-news-2.jpg" alt="Noticia 2" class="news-image">
+                        <div class="news-content">
+                            <h3>El auge de los podcasts: Herramientas para creadores de contenido audio</h3>
+                            <p class="news-meta">Por Carlos Rodríguez | 1 de junio, 2023</p>
+                            <p>Con el creciente interés en los podcasts, nuevas herramientas están surgiendo para ayudar a los creadores a producir contenido de audio de alta calidad...</p>
+                            <a href="#" class="btn">Leer más</a>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <img src="placeholder-news-3.jpg" alt="Noticia 3" class="news-image">
+                        <div class="news-content">
+                            <h3>Tendencias en fotografía móvil para 2023</h3>
+                            <p class="news-meta">Por Laura Martínez | 28 de mayo, 2023</p>
+                            <p>Descubre las últimas tendencias en fotografía móvil y las aplicaciones que están definiendo el futuro de la captura de imágenes con smartphones...</p>
+                            <a href="#" class="btn">Leer más</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Sobre WebFlex</h3>
+                <p>WebFlex es tu centro de herramientas multimedia, diseñado para potenciar tu creatividad y productividad.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <a href="index.html" class="btn btn-primary">Volver a la página principal</a>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('¡Gracias por suscribirte a nuestro boletín!');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
