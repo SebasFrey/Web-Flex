@@ -36,62 +36,51 @@
     </header>
 
     <main>
-        <section class="hero news-hero">
-            <h1>Noticias</h1>
-            <p>Mantente al día con las últimas novedades en herramientas multimedia</p>
-        </section>
-
-        <section class="news-section reveal fade-bottom">
-            <div class="news-container">
-                <article class="news-card featured-news">
-                    <img src="../Imagenes Noticias/1.jpeg" alt="Noticia destacada" class="news-image">
-                    <div class="news-content">
-                        <h2>Nueva herramienta de IA revoluciona la edición de video</h2>
-                        <p class="news-meta">Por Juan Pérez | 10 de junio, 2023</p>
-                        <p>Una nueva herramienta de inteligencia artificial promete simplificar drásticamente el proceso de edición de video, permitiendo a los usuarios crear contenido profesional en minutos...</p>
-                        <a href="#" class="btn">Leer más</a>
-                    </div>
-                </article>
-
-                <div class="news-grid">
-                    <article class="news-card">
-                        <img src="../Imagenes Noticias/2.jpeg" alt="Noticia 1" class="news-image">
-                        <div class="news-content">
-                            <h3>Actualización masiva en herramientas de diseño gráfico</h3>
-                            <p class="news-meta">Por Ana García | 5 de junio, 2023</p>
-                            <p>Las principales plataformas de diseño gráfico han lanzado actualizaciones significativas, incluyendo nuevas funcionalidades y mejoras en la interfaz de usuario...</p>
-                            <a href="#" class="btn">Leer más</a>
-                        </div>
-                    </article>
-                    <article class="news-card">
-                        <img src="../Imagenes Noticias/3.jpg" alt="Noticia 2" class="news-image">
-                        <div class="news-content">
-                            <h3>El auge de los podcasts: Herramientas para creadores de contenido audio</h3>
-                            <p class="news-meta">Por Carlos Rodríguez | 1 de junio, 2023</p>
-                            <p>Con el creciente interés en los podcasts, nuevas herramientas están surgiendo para ayudar a los creadores a producir contenido de audio de alta calidad...</p>
-                            <a href="#" class="btn">Leer más</a>
-                        </div>
-                    </article>
-                    <article class="news-card">
-                        <img src="placeholder-news-3.jpg" alt="Noticia 3" class="news-image">
-                        <div class="news-content">
-                            <h3>Tendencias en fotografía móvil para 2023</h3>
-                            <p class="news-meta">Por Laura Martínez | 28 de mayo, 2023</p>
-                            <p>Descubre las últimas tendencias en fotografía móvil y las aplicaciones que están definiendo el futuro de la captura de imágenes con smartphones...</p>
-                            <a href="#" class="btn">Leer más</a>
-                        </div>
-                    </article>
-                </div>
+        <section class="news-hero">
+            <div class="hero-content">
+                <h1>Noticias y Actualizaciones</h1>
+                <p>Mantente al día con las últimas novedades en el mundo de las herramientas multimedia.</p>
             </div>
         </section>
 
+        <section class="news-section">
+            <div class="news-container">
+                <div class="news-card">
+                    <img src="news-image-1.jpg" alt="Nueva herramienta de edición de video" class="news-image">
+                    <div class="news-content">
+                        <h3>Nueva herramienta de edición de video revolucionaria</h3>
+                        <p class="news-meta">Publicado el 15 de Mayo, 2023</p>
+                        <p>Una nueva herramienta de edición de video basada en IA promete simplificar el proceso de creación de contenido...</p>
+                        <a href="#" class="btn">Leer más</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img src="news-image-2.jpg" alt="Actualización de software de audio" class="news-image">
+                    <div class="news-content">
+                        <h3>Importante actualización para software de edición de audio</h3>
+                        <p class="news-meta">Publicado el 10 de Mayo, 2023</p>
+                        <p>La última actualización del popular software de edición de audio trae nuevas características y mejoras de rendimiento...</p>
+                        <a href="#" class="btn">Leer más</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img src="news-image-3.jpg" alt="Tendencias en diseño gráfico" class="news-image">
+                    <div class="news-content">
+                        <h3>Tendencias emergentes en diseño gráfico para 2023</h3>
+                        <p class="news-meta">Publicado el 5 de Mayo, 2023</p>
+                        <p>Descubre las tendencias de diseño gráfico que están dando forma al panorama visual este año...</p>
+                        <a href="#" class="btn">Leer más</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
         <div class="footer-content">
             <div class="footer-section">
                 <h3>Sobre WebFlex</h3>
-                <p>WebFlex es tu centro de herramientas multimedia, diseñado para potenciar tu creatividad y productividad.</p>
+                <p>WebFlex es tu centro de herramientas multimedia, diseñado para potenciar tu creatividad y productividad en la era digital.</p>
             </div>
             <div class="footer-section">
                 <h3>Síguenos</h3>
@@ -103,16 +92,9 @@
             </div>
         </div>
         <div class="footer-bottom">
+            <p>&copy; <span class="copyright-year"></span> WebFlex. Todos los derechos reservados.</p>
             <a href="index.html" class="btn btn-primary">Volver a la página principal</a>
         </div>
     </footer>
-
-    <script>
-        document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('¡Gracias por suscribirte a nuestro boletín!');
-            this.reset();
-        });
-    </script>
 </body>
 </html>
